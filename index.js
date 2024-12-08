@@ -21,6 +21,45 @@ let usuarios = [
         calle: 'Calle 1',
         telefono: '1234567890',
         numCasa: '101'
+    },
+    {
+        idUsuario: 2,
+        nombre: 'Nataly Diaz',
+        correo: 'natalydias10@gmail.com',
+        contrasena: '12345',
+        codigoPostal: '12345',
+        estado: 'Estado2',
+        municipio: 'Municipio2',
+        colonia: 'Colonia2',
+        calle: 'Calle 2',
+        telefono: '0987654321',
+        numCasa: '102'
+    },
+    {
+        idUsuario: 3,
+        nombre: 'Angel Negrete',
+        correo: 'angelnegrete10@gmail.com',
+        contrasena: '12345',
+        codigoPostal: '12345',
+        estado: 'Estado3',
+        municipio: 'Municipio3',
+        colonia: 'Colonia3',
+        calle: 'Calle 3',
+        telefono: '12345',
+        numCasa: '103'
+    },
+    {
+        idUsuario: 4,
+        nombre: 'David Rangel',
+        correo: 'davidrangel10@gmail.com',
+        contrasena: '12345',
+        codigoPostal: '12345',
+        estado: 'Estado4',
+        municipio: 'Municipio4',
+        colonia: 'Colonia4',
+        calle: 'Calle 4',
+        telefono: '67890',
+        numCasa: '104'
     }
 ];
 
