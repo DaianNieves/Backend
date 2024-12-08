@@ -195,6 +195,19 @@ app.post('/usuarios', (req, res) => {
     res.status(201).json({ mensaje: 'Usuario agregado correctamente.', usuario });
 });
 
+app.post('/login', (req, res) => {
+    const { correo, contrasena } = req.body;
+
+    // Buscar al usuario en la "base de datos"
+    const usuario = usuarios.find(u => u.correo === correo && u.contrasena === contrasena);
+
+    if (usuario) {
+        res.status(200).json({ success: true, mensaje: 'Login exitoso', usuario });
+    } else {
+        res.status(401).json({ success: false, mensaje: 'Credenciales inválidas' });
+    }
+});
+
 // Endpoints de categorías
 app.get('/categorias', (req, res) => {
     res.json(categorias);
